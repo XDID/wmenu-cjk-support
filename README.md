@@ -1,3 +1,10 @@
+fork from https://codeberg.org/adnano/wmenu
+
+add cjk input support and config for both latin and cjk font
+-E for latin
+-C for CJK
+-F to enable fuzzy search
+
 # wmenu
 
 wmenu is an efficient dynamic menu for Sway and wlroots based Wayland
@@ -12,8 +19,7 @@ Dependencies:
 - pango
 - wayland
 - xkbcommon
-- scdoc (optional)
-
+- scdoc
 ```
 $ meson setup build
 $ ninja -C build
