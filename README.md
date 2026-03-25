@@ -1,8 +1,11 @@
 fork from https://codeberg.org/adnano/wmenu
 
 add cjk input support and config for both latin and cjk font
+
 -E for latin
+
 -C for CJK
+
 -F to enable fuzzy search
 
 # wmenu
