@@ -17,7 +17,7 @@ wmenu - dynamic menu for Wayland
   [-M _color_] [-m _color_] \
   [-S _color_] [-s _color_]
 
-*wmenu-run* ...
+*wmenu-run* [-T _terminal_] [-t _patterns_] ...
 
 # DESCRIPTION
 
@@ -28,6 +28,10 @@ to those matching the tokens in the input.
 
 *wmenu-run* is a special invocation of wmenu which lists programs in the user's
 $PATH and runs the result.
+
+When *-T* is provided, *wmenu-run* prefixes the selected command with the given
+terminal program. If *-t* is also provided, the prefix is only applied to
+commands matching the comma-separated shell patterns.
 
 # OPTIONS
 
@@ -85,6 +89,14 @@ $PATH and runs the result.
 
 *-s* _RRGGBB[AA]_
 	defines the selection foreground color.
+
+*-T* _terminal_
+	Used by *wmenu-run* to prefix the executed command with the given terminal
+	program.
+
+*-t* _patterns_
+	Used by *wmenu-run* to limit *-T* to commands matching the given
+	comma-separated shell patterns, such as `htop,btop,nvim,less`.
 
 # USAGE
 

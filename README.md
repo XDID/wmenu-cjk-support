@@ -39,4 +39,9 @@ To use wmenu with Sway, you can add the following to your configuration file:
 set $menu wmenu-run
 bindsym $mod+d exec $menu
 ```
+
+To launch terminal programs inside a specific terminal wrapper without affecting
+GUI apps, use `wmenu-run -T footclient -t 'htop,btop,nvim,less'`. A selection
+like `htop` will then be executed as `footclient htop`, while `firefox` will
+still be executed directly.
 # wmenu-cjk-support
